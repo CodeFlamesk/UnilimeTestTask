@@ -1,39 +1,28 @@
-# React + Vite
-
-Install:
-npm i + npm run dev
-
-About structure:
-
 /project-root
 │
-├── /components                      # all components that are reused
-│   └── /ui                          # all styles that are reused
-│       ├── SmallText.tsx            
-│       ├── SubheadingM.tsx          
-│       └── ..... etc.         
+├── /components                      # Повторно використовувані компоненти
+│   └── /ui                          # Повторно використовувані стилізовані компоненти
+│       ├── SmallText.tsx           
+│       ├── SubheadingM.tsx         
+│       └── ...                     
 │
-├── /Layout.Layout.txt              # Layout
-
-├── /pages                          # All pages
+├── /Layout.Layout.txt              # Файл опису Layout (можливо, технічна документація)
+│
+├── /pages                          # Усі сторінки
 │   └── /PageOverview
 │       └── /icon
-│           └── ArrowDown.tsx        
+│           └── ArrowDown.tsx       # Іконка для сторінки
 │
 │   └── /settings
-│       ├── ImgUploader.tsx         # This is a component for receiving and displaying images, I used it only in this component, since the project is small and it will not be expanded, I did not put it in the components folder
+│       ├── ImgUploader.tsx         # Компонент для завантаження та відображення зображень.
+│       │                           # Він використовується лише тут, тому не винесений у /components.
 │       ├── styleImgUploader.module.css  
 │       └── Settings.tsx 
-│       ...etc.
+│       └── ...                     
 │
-├── /index.css                      # main css
-
-├── /index.html                     # main html
-
-├── /Main.jsx                       # Layout wrapper for pages/components
-
-├── tailwind.config.js             # Tailwind CSS config (inferred from Tailwind usage)
-
-├── tsconfig.json                  # TypeScript/JavaScript config
-
-└── package.json
+├── /index.css                      # Головний CSS файл
+├── /index.html                     # Головний HTML шаблон
+├── /Main.jsx                       # Обгортка Layout для сторінок/компонентів
+├── tailwind.config.js             # Налаштування Tailwind CSS
+├── tsconfig.json                  # Налаштування TypeScript
+└── package.json                   # Залежності проєкту
