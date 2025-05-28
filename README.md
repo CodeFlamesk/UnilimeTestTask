@@ -1,28 +1,28 @@
 /project-root
 │
-├── /components                      # Повторно використовувані компоненти
-│   └── /ui                          # Повторно використовувані стилізовані компоненти
-│       ├── SmallText.tsx           
-│       ├── SubheadingM.tsx         
-│       └── ...                     
+├── /components                      # Reusable components
+│   └── /ui                          # Reusable styled UI components
+│       ├── SmallText.tsx            
+│       ├── SubheadingM.tsx          
+│       └── ... (etc.)       
 │
-├── /Layout.Layout.txt              # Файл опису Layout (можливо, технічна документація)
+├── /Layout.Layout.txt              # Layout description/documentation
 │
-├── /pages                          # Усі сторінки
-│   └── /PageOverview
-│       └── /icon
-│           └── ArrowDown.tsx       # Іконка для сторінки
-│
+├── /pages                          # All page components
+│   ├── /PageOverview
+│   │   └── /icon
+│   │       └── ArrowDown.tsx        # Icon component for the page
+│   │
 │   └── /settings
-│       ├── ImgUploader.tsx         # Компонент для завантаження та відображення зображень.
-│       │                           # Він використовується лише тут, тому не винесений у /components.
+│       ├── ImgUploader.tsx         # Image upload & preview component.
+│       │                           # Used only here due to the project's limited scope.
 │       ├── styleImgUploader.module.css  
 │       └── Settings.tsx 
-│       └── ...                     
+│       └── ... (etc.)
 │
-├── /index.css                      # Головний CSS файл
-├── /index.html                     # Головний HTML шаблон
-├── /Main.jsx                       # Обгортка Layout для сторінок/компонентів
-├── tailwind.config.js             # Налаштування Tailwind CSS
-├── tsconfig.json                  # Налаштування TypeScript
-└── package.json                   # Залежності проєкту
+├── /index.css                      # Global CSS
+├── /index.html                     # Main HTML template
+├── /Main.jsx                       # Layout wrapper for pages/components
+├── tailwind.config.js             # Tailwind CSS configuration
+├── tsconfig.json                  # TypeScript configuration
+└── package.json                   # Project dependencies and scripts
