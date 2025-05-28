@@ -1,9 +1,40 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Install:
+npm i + npm run dev
 
-Currently, two official plugins are available:
+About structure:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# UnilimeTestTask
+/project-root
+│
+├── /components                      # all components that are reused
+│   └── /ui                          # all styles that are reused
+│       ├── SmallText.tsx            
+│       ├── SubheadingM.tsx          
+│       └── ..... ets.         
+│
+├── /Layout.Layout.txt                 # Layout
+
+├── /pages                             # All pages
+│   └── /PageOverview
+│       └── /icon
+│           └── ArrowDown.tsx        
+│
+    └──/settings
+│     ├── ImgUploader.tsx              # This is a component for receiving and displaying images, I used it only in this component, since the project is small and it will not be expanded, I did not put it in the components folder
+│     ├── styleImgUploader.module.css  
+│     └── Settings.tsx 
+      ...etc.
+
+└──/index.css                        # main css
+
+└──/index.html                       # main html
+└──/Main.jsx                         # Layout wrapper for pages/components
+
+ 
+│
+├          
+│
+├── tailwind.config.js              # Tailwind CSS config (inferred from Tailwind usage)
+├── tsconfig.json                   # TypeScript/JavaScript config
+└── package.json    
