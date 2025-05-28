@@ -3,6 +3,8 @@
 Install:
 npm i + npm run dev
 
+P.S: I'm sorry, I used checkboxes in PageOverview
+
 About structure:
 
 [image](https://github.com/user-attachments/assets/af5e1c80-002f-47cc-9352-6cc24e0f7149)
